@@ -6,20 +6,31 @@ import Contact from './components/Contact';
 import Experience from './components/Experience';
 import Education from './components/Education';
 import SocialLinks from './components/SocialLinks';
-
+import backgroundImage from './assets/Hero_bg.jpg';
 
 function App() {
   return (
-    <div className="bg-slate-900 text-white font-sans">
-      <SocialLinks />
-      <Hero />
-      <About />
-      <SocialLinks isMobile={true} />
-      <Experience />
-      <Education />
-      <TechStack />
-      <Projects />
-      <Contact />
+    <div
+      className="text-white min-h-screen bg-repeat"
+      style={{
+        backgroundImage: `url(${backgroundImage})`,
+        backgroundSize: 'cover',
+        backgroundAttachment: 'fixed',
+        backgroundPosition: 'center',
+      }}
+    >
+      {/* 🔲 Semi-transparent overlay for shading */}
+      <div className="bg-black/70 min-h-screen">
+        <SocialLinks />
+        <Hero />
+        <About />
+        <Experience />
+        <Education />
+        <TechStack />
+        <Projects />
+        <Contact />
+        <SocialLinks isMobile={true} />
+      </div>
     </div>
   );
 }
