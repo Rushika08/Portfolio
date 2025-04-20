@@ -39,7 +39,7 @@ const Contact = () => {
 
   return (
     <section className="p-8 max-w-xl mx-auto text-center">
-      <h2 className="text-3xl font-semibold mb-4">Contact Me</h2>
+      <h2 className="text-3xl font-bold text-center mb-10 text-white">Contact Me</h2>
       <p className="text-slate-300 mb-4">Let’s connect — for collaboration, hiring, or just a chat!</p>
       
       <form onSubmit={handleSubmit} className="flex flex-col gap-4">

@@ -2,19 +2,19 @@ import { motion } from 'framer-motion';
 
 const Hero = () => {
   return (
-    <section className="min-h-screen flex flex-col justify-center items-center text-center relative bg-gradient-to-b from-slate-800 to-slate-900">
+    <section className="flex flex-col justify-center items-center text-center px-4 py-10 sm:py-20">
       {/* Optional Semi-transparent overlay */}
-      <div className="absolute top-0 left-0 w-full h-full bg-black/50 z-10"></div>
+      <div className="absolute top-0 left-0 w-full h-0.5 bg-black/50 z-10"></div>
 
       {/* Hero Heading with Brighter Text */}
-      <h1 className="text-5xl md:text-7xl font-extrabold text-white shadow-none z-20 relative">
+      <h1 className="text-4xl md:text-6xl font-extrabold text-white shadow-none z-20 relative">
         Hi, I'm Rushika
         <span className="block text-xl mt-2 text-slate-200">A Computer Engineering Student focused on Data Engineering & Beyond</span>
       </h1>
 
       {/* Hero Subtitle with Motion Effect */}
       <motion.p
-        className="mt-6 text-lg text-slate-300 z-20 relative"
+        className="mt-4 text-lg text-slate-300 z-20 relative"
         animate={{ opacity: [0, 1, 0] }}
         transition={{ repeat: Infinity, duration: 10 }}
       >
@@ -22,7 +22,7 @@ const Hero = () => {
       </motion.p>
 
       {/* Resume Section */}
-      <div className="flex flex-col sm:flex-row sm:gap-4 items-center mt-8 z-20 relative">
+      <div className="flex flex-col sm:flex-row sm:gap-4 items-center mt-6 z-20 relative">
         <a
           href="/Portfolio/Rushika_Jayasinghe_Resume.pdf"
           target="_blank"

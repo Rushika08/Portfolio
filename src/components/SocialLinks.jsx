@@ -1,4 +1,4 @@
-import { FaGithub, FaLinkedin, FaMedium, FaEnvelope } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaMedium, FaEnvelope, FaWhatsapp } from 'react-icons/fa';
 
 const socialLinks = [
   {
@@ -28,6 +28,13 @@ const socialLinks = [
     icon: <FaEnvelope size={20} />,
     href: 'mailto:rushikajayasinghe@gmail.com',
     style: 'bg-red-600',
+  },
+  {
+    id: 5,
+    name: 'WhatsApp',
+    icon: <FaWhatsapp size={20} />,
+    href: 'https://wa.me/94711201116', // Replace with your number
+    style: 'bg-green-600',
   },
 ];
 

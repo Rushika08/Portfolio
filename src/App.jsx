@@ -7,6 +7,8 @@ import Experience from './components/Experience';
 import Education from './components/Education';
 import SocialLinks from './components/SocialLinks';
 import backgroundImage from './assets/Hero_bg.jpg';
+import Achievements from './components/Awards';
+import MediumPosts from './components/MediumPosts';
 
 function App() {
   return (
@@ -28,8 +30,10 @@ function App() {
         <Education />
         <TechStack />
         <Projects />
+        <Achievements />
         <Contact />
         <SocialLinks isMobile={true} />
+        <MediumPosts />
       </div>
     </div>
   );

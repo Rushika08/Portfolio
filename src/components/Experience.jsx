@@ -6,9 +6,11 @@ const experiences = [
     company: 'Creative Software',
     date: 'March 2025 - Present',
     points: [
-      'Led the ETL process in Azure Modern Data Platform projects.',
-      'Migrated legacy Java code to Azure-based Python pipelines.',
-      'Built dashboards for an insurance company using Power BI.',
+      'Primarily involved in building an on-premise data warehousing solution.',
+      'Designing and maintaining ETL pipelines using on-premise data tools.',
+      'Extracting, transforming, and integrating data from multiple database systems.',
+      'Writing report logics & preparing dashboards in Power BI to support data-driven insights.',
+      'Preparing high-quality, reliable data to support reporting and dashboard development.',
     ],
   },
   {
@@ -16,8 +18,11 @@ const experiences = [
     company: 'Creative Software',
     date: 'April 2024 - February 2025',
     points: [
-      'Designed real-time data pipelines using Kafka and Data Factory.',
-      'Built analytics layers with SQL and created client dashboards.',
+      'Contributed to developing a modern data platform using Azure Cloud services.',
+      'Designed and optimized ETL pipelines with Azure Synapse Analytics, Python, and TSQL to ensure data integrity and performance.',
+      'Migrated legacy Java-based processes to Azure, enhancing scalability with cloud native solutions.',
+      'Created and automated reporting scripts to prepare data for Power BI dashboards.',
+      'Documented ETL and migration workflows to support knowledge transfer and long-term maintainability.',
     ],
   },
 ];
@@ -48,8 +53,11 @@ const Experience = () => {
               </a>{' '}
               | {exp.date}
             </span>
+
+            <p className="mt-3 text-slate-300 text-sm">{exp.points[0]}</p>
+
             <ul className="mt-2 list-disc ml-5 text-slate-300 text-sm space-y-1">
-              {exp.points.map((point, i) => (
+              {exp.points.slice(1).map((point, i) => (
                 <li key={i}>{point}</li>
               ))}
             </ul>

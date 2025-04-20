@@ -21,7 +21,7 @@ const educationData = [
     date: 'Aug 2019',
     points: [
       'Stream: Physical Science',
-      'Results: 2As, 1B (Combined Mathematics, Chemistry, Physics)',
+      'Results: 2As & 1B (Combined Mathematics, Chemistry, Physics)',
       'Z-Score: 1.9832',
     ],
   },
