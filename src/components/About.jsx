@@ -13,7 +13,7 @@ const About = () => {
           Download Resume
         </a> */}
         <a
-        href="/resume.pdf"
+        href="/Rushika_Jayasinghe_Resume.pdf"
         target="_blank"
         rel="noopener noreferrer"
         className="text-blue-500 underline"
