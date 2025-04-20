@@ -57,7 +57,7 @@ const Education = () => {
   return (
     <section className="p-8 max-w-5xl mx-auto">
       <h2 className="text-3xl font-bold text-center mb-10 text-white">Education</h2>
-      <div className="relative border-l border-green-500">
+      <div className="relative border-l border-green-500 mx-auto max-w-4xl">
         {educationData.map((edu, idx) => (
           <motion.div
             key={idx}
