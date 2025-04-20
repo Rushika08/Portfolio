@@ -6,7 +6,7 @@ const About = () => {
           I’m a passionate Data Engineer experienced in building efficient data pipelines, automating ETL processes, and working with Azure MDP. I love solving complex data problems using Python, SQL, and cloud technologies.
         </p>
         <a
-          href="/Rushika_Jayasinghe_Resume.pdf"
+          href="/Portfolio/Rushika_Jayasinghe_Resume.pdf"
           download
           className="inline-block mt-4 px-6 py-2 bg-cyan-500 text-white rounded hover:bg-cyan-600"
         >
