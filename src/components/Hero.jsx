@@ -9,7 +9,9 @@ const Hero = () => {
       {/* Hero Heading with Brighter Text */}
       <h1 className="text-4xl md:text-6xl font-extrabold text-white shadow-none z-20 relative">
         Hi, I'm Rushika
-        <span className="block text-xl mt-2 text-slate-200">A Computer Engineering Student focused on Data Engineering & Beyond</span>
+        <span className="block text-xl mt-2 text-slate-200">
+          A Computer Engineering Student focused on Data Engineering & Beyond
+        </span>
       </h1>
 
       {/* Hero Subtitle with Motion Effect */}
@@ -27,6 +29,14 @@ const Hero = () => {
           href="/Portfolio/Rushika_Jayasinghe_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
+          onClick={() => {
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'button_click', {
+                event_category: 'engagement',
+                event_label: 'Resume View',
+              });
+            }
+          }}
           className="px-6 py-2 bg-cyan-500 text-white rounded hover:bg-cyan-600 mb-4 sm:mb-0 sm:mr-4"
         >
           View Resume
@@ -34,6 +44,14 @@ const Hero = () => {
         <a
           href="/Portfolio/Rushika_Jayasinghe_Resume.pdf"
           download
+          onClick={() => {
+            if (typeof gtag !== 'undefined') {
+              gtag('event', 'button_click', {
+                event_category: 'engagement',
+                event_label: 'Resume Download',
+              });
+            }
+          }}
           className="px-6 py-2 bg-cyan-500 text-white rounded hover:bg-cyan-600"
         >
           Download Resume
